@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALEJANDRO FDEZ-MONTES — 3D Artist</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- 1. MENU DETRÁS - TRUCO COMINVI PERSONALIZADO -->
+    <div id="menuOverlay">
+      <div class="menu-main">
+        <div class="menu-links">
+          <div class="menu-photo">
+            <img
+              src="https://ik.imagekit.io/alejfmq/Portfolio/fotoLinkdl.png?updatedAt=1791212619522"
+              alt="Alejandro Fernández-Montes Quintas - Artista Gráfico 3D"
+            />
+            <div class="menu-photo__meta">
+              <span>ALEJANDRO FDEZ-MONTES Q.</span>
+              <span>U-tad · Madrid 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-side">
+          <p>
+            <strong>ALEJANDRO<br />FERNÁNDEZ-MONTES Q.</strong><br />Madrid —
+            U-tad University<br />Estudiante de Animación 3D (4º curso)
+          </p>
+          <p class="side-muted">
+            Artista Gráfico 3D<br />
+            Especializado en Maya, Blender,<br />ZBrush, Nuke & Unreal<br />
+            <br />
+            Erasmus+ en Darmstadt<br />University of Applied Sciences<br />2024-2025
+          </p>
+          <p>alejfmq@gmail.com<br />+34 655 910 234</p>
+          <a
+            class="cta"
+            href="https://www.linkedin.com/in/alejandro-fern%C3%A1ndez-montes-quintas-a5a89b368/"
+            target="_blank"
+            rel="noopener"
+            >LINKEDIN →</a
+          >
+          <div class="side-socials">
+            <a
+              href="https://www.linkedin.com/in/alejandro-fern%C3%A1ndez-montes-quintas-a5a89b368/"
+              target="_blank"
+              >LI</a
+            >
+            <a
+              href="https://www.canva.com/design/DA6o1T2CwFIw/WSzJszPoXlgqBB463zQ5A/edit?utm_content=DA6o1T2CwFIw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"
+              >PF</a
+            >
+            <span>W.</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-bottom">
+        <span>©2026 Alejandro Fdez-Montes Quintas. All rights reserved.</span>
+        <span>Madrid, España — Disponible Jun-Ago full time</span>
+      </div>
+    </div>
+
+    <!-- 2. SITE WRAPPER QUE SE EMPUJA -->
+    <div id="siteWrapper">
+      <header class="cominvi-header topbar">
+        <a class="logo">ALEJANDRO F-M Q</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <div class="burger">
+            <span class="line line-1"></span><span class="line line-2"></span>
+          </div>
+          <span class="menu-text" id="menuText">MENU</span>
+        </button>
+      </header>
+
+      <section class="filter" id="work">
+        <p class="filter__label"></p>
+        <h1 class="filter__title">
+          <button data-filter="all" class="filter__btn is-active">
+            All Work,
+          </button>
+          <button data-filter="modeling" class="filter__btn">
+            3D Modeling,
+          </button>
+          <button data-filter="animation" class="filter__btn">
+            Animation,
+          </button>
+          <button data-filter="lighting" class="filter__btn">
+            Lighting & Lookdev,
+          </button>
+          <button data-filter="unreal" class="filter__btn">
+            Unreal Engine
+          </button>
+        </h1>
+      </section>
+
+      <main class="grid" id="grid">
+        <!-- 01 JAIBO FILMS -->
+        <article class="card" data-category="modeling lighting animation">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Jaibo Films - Artista Grafico 3D"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>01</span><span>Jaibo Films — Artista 3D (2025)</span
+            ><a
+              href="https://www.linkedin.com/in/alejandro-fern%C3%A1ndez-montes-quintas-a5a89b368/"
+              target="_blank"
+              >FULL PROJECT ↗</a
+            >
+          </div>
+        </article>
+
+        <!-- 02 PROYECTO UNIVERSITARIO -->
+        <article class="card" data-category="modeling animation">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Proyecto Universitario U-tad - Modelado 3D UVs"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>02</span><span>Proyecto U-tad — Modelado & UVs</span
+            ><a
+              href="https://www.canva.com/design/DA6o1T2CwFIw/WSzJszPoXlgqBB463zQ5A/edit?utm_content=DA6o1T2CwFIw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"
+              >FULL PROJECT ↗</a
+            >
+          </div>
+        </article>
+
+        <!-- 03 DARMSTADT / UNREAL -->
+        <article class="card" data-category="unreal modeling">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Darmstadt University - Unreal Engine"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>03</span><span>Darmstadt HDA — Unreal Engine 4/5</span
+            ><a>FULL PROJECT ↗</a>
+          </div>
+        </article>
+
+        <!-- 04 ZBRUSH ORGANICO -->
+        <article class="card" data-category="modeling">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Modelado Organico ZBrush"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>04</span><span>ZBrush — Modelado Orgánico</span
+            ><a>FULL PROJECT ↗</a>
+          </div>
+        </article>
+
+        <!-- 05 LIGHTING MAYA NUKE -->
+        <article class="card" data-category="lighting">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Iluminacion Maya Nuke"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>05</span><span>Lookdev — Maya + Nuke</span
+            ><a>FULL PROJECT ↗</a>
+          </div>
+        </article>
+
+        <!-- 06 RIGGING & STORYTELLING -->
+        <article class="card" data-category="animation modeling">
+          <div class="card__media">
+            <img
+              src="https://ik.imagekit.io/jzanz3klfl/portfolio/IMG_3651.jpeg?updatedAt=1767891936199"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              alt="Rigging y storytelling"
+              loading="eager"
+            />
+          </div>
+          <div class="card__meta">
+            <span>06</span><span>Rigging & Storytelling</span
+            ><a>FULL PROJECT ↗</a>
+          </div>
+        </article>
+      </main>
+
+      <footer class="footer-simple" id="contact">
+        <div class="footer-simple__inner">
+          <div class="footer-simple__left">
+            <span class="footer-simple__label">CONTACTO</span>
+            <h2 class="footer-simple__name">
+              Alejandro Fernández-Montes Quintas
+            </h2>
+          </div>
+          <div class="footer-simple__right">
+            <a
+              href="https://www.linkedin.com/in/alejandro-fern%C3%A1ndez-montes-quintas-a5a89b368/"
+              target="_blank"
+              rel="noopener"
+              class="footer-simple__link"
+              >LINKEDIN ↗</a
+            >
+            <a href="mailto:alejfmq@gmail.com" class="footer-simple__link"
+              >alejfmq@gmail.com</a
+            >
+            <a href="tel:+34655910234" class="footer-simple__link"
+              >+34 655 910 234</a
+            >
+          </div>
+        </div>
+        <div class="footer-simple__bottom">
+          <span>©2026 ALEJANDRO FDEZ-MONTES Q. — Madrid, España</span>
+          <span>Disponible Jun-Ago full time</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
